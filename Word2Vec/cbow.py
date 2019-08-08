@@ -35,6 +35,7 @@ sequences = tokenizer.texts_to_sequences(sents)
 # 构建训练集、测试集
 x, y = [], []
 for sequence in sequences:
+    # nltk.trigrams()函数作用:将类似[1,2,3,4]划分为[[1,2,3],[2,3,4]]
     triples = list(nltk.trigrams(sequence))
     for item in triples:
         x.append([item[0], item[2]])
