@@ -1,1 +1,0 @@
-Skip-grams and CBOW
